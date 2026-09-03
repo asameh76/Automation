@@ -1,0 +1,550 @@
+{
+  "errors": [
+    {
+      "signature": "self_audit::KB_HEALTH_LOW",
+      "error": "Self-audit gap: KB_HEALTH",
+      "component": "self_audit",
+      "fix_type": "investigate",
+      "status": "KB_HEALTH_LOW",
+      "msg": "0.0% (0/48 verified)",
+      "fix_attempted": "kb_combined did not improve health: [2026-09-03T12:34:04.491686] OK: kb_self_heal.py\n[2026-09-03T12:34:04.567876] OK: kb_feedback_loop.p",
+      "verified": false,
+      "auto_fixed": false,
+      "success_count": 0,
+      "correlation_confidence": "medium",
+      "first_seen": "2026-09-03T12:34:03.488702",
+      "last_seen": "2026-09-03T12:34:03.488702"
+    },
+    {
+      "signature": "self_audit::ERROR:SERVICES",
+      "error": "Self-audit gap: SERVICES",
+      "component": "self_audit",
+      "fix_type": "investigate",
+      "status": "ERROR:SERVICES",
+      "msg": "list index out of range",
+      "fix_attempted": "No autonomous fix available",
+      "verified": false,
+      "auto_fixed": false,
+      "success_count": 0,
+      "correlation_confidence": "medium",
+      "first_seen": "2026-09-03T12:34:03.488702",
+      "last_seen": "2026-09-03T12:34:03.488702"
+    },
+    {
+      "signature": "connection_error",
+      "fix": "Cross-source error (medium): unknown",
+      "verified": false,
+      "component": "unknown",
+      "tech_stack": "Hermes",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "occurrence_count": 1,
+      "auto_fixed": "true",
+      "success_count": 0,
+      "fail_count": 0,
+      "fix_type": "investigate"
+    },
+    {
+      "signature": "2026_09_03_12_34_02_006_error_gateway_run__another_gateway_i",
+      "fix": "Investigate: errors.log",
+      "verified": "verified",
+      "component": "errors.log",
+      "tech_stack": "Hermes",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "occurrence_count": 5,
+      "auto_fixed": "true",
+      "success_count": 4,
+      "fail_count": 0,
+      "fix_type": "investigate"
+    },
+    {
+      "signature": "self_audit::SERVICE_ISSUES",
+      "error": "Self-audit gap: SERVICES",
+      "component": "self_audit",
+      "fix_type": "investigate",
+      "status": "SERVICE_ISSUES",
+      "msg": "FAILED_UNIT:caddy.service; FAILED_UNIT:hermes.service",
+      "fix_attempted": "Service issues require human review: FAILED_UNIT:caddy.service; FAILED_UNIT:hermes.service",
+      "verified": false,
+      "auto_fixed": false,
+      "success_count": 0,
+      "correlation_confidence": "medium",
+      "first_seen": "2026-09-03T12:39:13.098979",
+      "last_seen": "2026-09-03T12:39:13.098979"
+    },
+    {
+      "id": "webresearch_self_audit::service_issues_--a",
+      "timestamp": "2026-09-03T12:39:19.388740",
+      "error_type": "researched",
+      "error_message": "RESEARCH:self_audit::SERVICE_ISSUES --add-kb",
+      "component": "internet",
+      "fix_type": "hypothesis",
+      "solution": "",
+      "source": "web_research",
+      "commands": [],
+      "findings_count": 0,
+      "self_healed": false,
+      "verified": false,
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "id": "webresearch_research:self_audit::service_i",
+      "timestamp": "2026-09-03T12:39:27.661038",
+      "error_type": "researched",
+      "error_message": "RESEARCH:RESEARCH:self_audit::SERVICE_ISSUES --add-kb --add-kb",
+      "component": "internet",
+      "fix_type": "hypothesis",
+      "solution": "",
+      "source": "web_research",
+      "commands": [],
+      "findings_count": 0,
+      "self_healed": false,
+      "verified": false,
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "id": "webresearch_research:research:self_audit::",
+      "timestamp": "2026-09-03T12:39:30.171850",
+      "error_type": "researched",
+      "error_message": "RESEARCH:RESEARCH:RESEARCH:self_audit::SERVICE_ISSUES --add-kb --add-kb --add-kb",
+      "component": "internet",
+      "fix_type": "hypothesis",
+      "solution": "",
+      "source": "web_research",
+      "commands": [],
+      "findings_count": 0,
+      "self_healed": false,
+      "verified": false,
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "id": "webresearch_research:research:research:sel",
+      "timestamp": "2026-09-03T12:39:38.496438",
+      "error_type": "researched",
+      "error_message": "RESEARCH:RESEARCH:RESEARCH:RESEARCH:self_audit::SERVICE_ISSUES --add-kb --add-kb --add-kb --add-kb",
+      "component": "internet",
+      "fix_type": "hypothesis",
+      "solution": "",
+      "source": "web_research",
+      "commands": [],
+      "findings_count": 0,
+      "self_healed": false,
+      "verified": false,
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "id": "webresearch_research:research:research:res",
+      "timestamp": "2026-09-03T12:39:56.418935",
+      "error_type": "researched",
+      "error_message": "RESEARCH:RESEARCH:RESEARCH:RESEARCH:RESEARCH:self_audit::SERVICE_ISSUES --add-kb --add-kb --add-kb --add-kb --add-kb",
+      "component": "internet",
+      "fix_type": "hypothesis",
+      "solution": "",
+      "source": "web_research",
+      "commands": [],
+      "findings_count": 0,
+      "self_healed": false,
+      "verified": false,
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "Cron job issue: 0 * * * * cd /root/.hermes/scripts && python3 github-error-fix.py >> /root/.hermes/logs/error-fix.lo",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:47:05.357522",
+      "source": "cron_ingest",
+      "verified": false,
+      "fix_type": "investigate",
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "Cron job issue: 0 */4 * * * cd /root/.hermes/scripts && python3 evolution-engine.py >> /root/.hermes/logs/evolution-",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:47:05.357537",
+      "source": "cron_ingest",
+      "verified": false,
+      "fix_type": "investigate",
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "Cron job issue: 0 4 * * * bash /root/rotate_survival_capsule.sh >> /root/survival-capsule-rotation.log 2>&1",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:47:05.357540",
+      "source": "cron_ingest",
+      "verified": false,
+      "fix_type": "investigate",
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "Cron job issue: */30 * * * * python3 /root/.hermes/scripts/kb_self_replicate.py >> /root/.hermes/logs/kb_replicate.l",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:47:05.357543",
+      "source": "cron_ingest",
+      "verified": false,
+      "fix_type": "investigate",
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "Cron job issue: */15 * * * * python3 /root/.hermes/scripts/hostinger_health_check.py >> /root/.hermes/logs/hostinger",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:47:05.357555",
+      "source": "cron_ingest",
+      "verified": false,
+      "fix_type": "investigate",
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "Cron job issue: 0 * * * * cd /root/.hermes/scripts && python3 github-error-fix.py >> /root/.hermes/logs/error-fix.lo",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:47:18.358650",
+      "source": "cron_ingest",
+      "verified": false,
+      "fix_type": "investigate",
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "Cron job issue: 0 */4 * * * cd /root/.hermes/scripts && python3 evolution-engine.py >> /root/.hermes/logs/evolution-",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:47:18.358661",
+      "source": "cron_ingest",
+      "verified": false,
+      "fix_type": "investigate",
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "Cron job issue: 0 4 * * * bash /root/rotate_survival_capsule.sh >> /root/survival-capsule-rotation.log 2>&1",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:47:18.358664",
+      "source": "cron_ingest",
+      "verified": false,
+      "fix_type": "investigate",
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "Cron job issue: */30 * * * * python3 /root/.hermes/scripts/kb_self_replicate.py >> /root/.hermes/logs/kb_replicate.l",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:47:18.358675",
+      "source": "cron_ingest",
+      "verified": false,
+      "fix_type": "investigate",
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "Cron job issue: */15 * * * * python3 /root/.hermes/scripts/hostinger_health_check.py >> /root/.hermes/logs/hostinger",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:47:18.358677",
+      "source": "cron_ingest",
+      "verified": false,
+      "fix_type": "investigate",
+      "success_count": 0,
+      "auto_fixed": false
+    },
+    {
+      "error": "2026-09-03 12:32:32,452 ERROR gateway.run: Another gateway instance is already running (PID 337122, HERMES_HOME=/root/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' fir",
+      "status": "investigate",
+      "fixes": [
+        {
+          "description": "Manual fix detected",
+          "applied": true,
+          "applied_at": "2026-09-03T12:49:33.617830",
+          "evidence": "2026-09-03 12:32:32,452 ERROR gateway.run: Another gateway instance is already running (PID 337122, HERMES_HOME=/root/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.\n2026-09-03 12:32:39,788 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s \u2014 backing off 10s to break a respawn storm.\n2026-09-03 12:32:49,824 ERROR gateway.run: Another gateway instance is already running (PID 337122, HERMES_HOME=/root/.hermes). Use 'hermes gateway restart' to repl"
+        }
+      ],
+      "created_at": "2026-09-03T12:49:33.617830",
+      "source": "auto_capture"
+    },
+    {
+      "error": "2026-09-03 12:33:24,358 WARNING hermes_cli.gateway: Gateway (re)started 7 times in 120s \u2014 backing off 20s to break a respawn storm.\n2026-09-03 12:33:44,405 ERROR gateway.run: Another gateway instance ",
+      "status": "investigate",
+      "fixes": [
+        {
+          "description": "Manual fix detected",
+          "applied": true,
+          "applied_at": "2026-09-03T12:49:33.617858",
+          "evidence": "2026-09-03 12:33:24,358 WARNING hermes_cli.gateway: Gateway (re)started 7 times in 120s \u2014 backing off 20s to break a respawn storm.\n2026-09-03 12:33:44,405 ERROR gateway.run: Another gateway instance is already running (PID 337122, HERMES_HOME=/root/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.\n2026-09-03 12:33:51,965 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s \u2014 backing off 10s to break a respawn storm.\n2026-09-03 12:34:02,006 ERROR ga"
+        }
+      ],
+      "created_at": "2026-09-03T12:49:33.617858",
+      "source": "auto_capture"
+    },
+    {
+      "error": "2026-09-03 12:34:27,094 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s \u2014 backing off 10s to break a respawn storm.\n2026-09-03 12:34:37,123 ERROR gateway.run: Another gateway instance ",
+      "status": "investigate",
+      "fixes": [
+        {
+          "description": "Manual fix detected",
+          "applied": true,
+          "applied_at": "2026-09-03T12:49:33.617871",
+          "evidence": "2026-09-03 12:34:27,094 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s \u2014 backing off 10s to break a respawn storm.\n2026-09-03 12:34:37,123 ERROR gateway.run: Another gateway instance is already running (PID 337122, HERMES_HOME=/root/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.\n2026-09-03 12:34:44,407 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s \u2014 backing off 10s to break a respawn storm.\n2026-09-03 12:34:54,455 ERROR ga"
+        }
+      ],
+      "created_at": "2026-09-03T12:49:33.617871",
+      "source": "auto_capture"
+    },
+    {
+      "error": "2026-09-03 12:36:41,722 ERROR gateway.run: Another gateway instance is already running (PID 337122, HERMES_HOME=/root/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' fir",
+      "status": "investigate",
+      "fixes": [
+        {
+          "description": "Manual fix detected",
+          "applied": true,
+          "applied_at": "2026-09-03T12:49:33.617894",
+          "evidence": "2026-09-03 12:36:41,722 ERROR gateway.run: Another gateway instance is already running (PID 337122, HERMES_HOME=/root/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.\n2026-09-03 12:36:49,402 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s \u2014 backing off 10s to break a respawn storm.\n2026-09-03 12:36:59,436 ERROR gateway.run: Another gateway instance is already running (PID 337122, HERMES_HOME=/root/.hermes). Use 'hermes gateway restart' to repl"
+        }
+      ],
+      "created_at": "2026-09-03T12:49:33.617894",
+      "source": "auto_capture"
+    },
+    {
+      "error": "2026-09-03 12:38:47,022 ERROR gateway.run: Another gateway instance is already running (PID 337122, HERMES_HOME=/root/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' fir",
+      "status": "investigate",
+      "fixes": [
+        {
+          "description": "Manual fix detected",
+          "applied": true,
+          "applied_at": "2026-09-03T12:49:33.617915",
+          "evidence": "2026-09-03 12:38:47,022 ERROR gateway.run: Another gateway instance is already running (PID 337122, HERMES_HOME=/root/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.\n2026-09-03 12:38:54,536 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s \u2014 backing off 10s to break a respawn storm.\n2026-09-03 12:38:55,048 WARNING [20260903_095249_df0f943a] agent.tool_executor: Tool terminal returned error (0.44s): {\"output\": \"Traceback (most recent call last):"
+        }
+      ],
+      "created_at": "2026-09-03T12:49:33.617915",
+      "source": "auto_capture"
+    },
+    {
+      "error": "Cron job issue: 0 * * * * cd /root/.hermes/scripts && python3 github-error-fix.py >> /root/.hermes/logs/error-fix.lo",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:50:19.933632",
+      "source": "cron_ingest"
+    },
+    {
+      "error": "Cron job issue: 0 */4 * * * cd /root/.hermes/scripts && python3 evolution-engine.py >> /root/.hermes/logs/evolution-",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:50:19.933644",
+      "source": "cron_ingest"
+    },
+    {
+      "error": "Cron job issue: 0 4 * * * bash /root/rotate_survival_capsule.sh >> /root/survival-capsule-rotation.log 2>&1",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:50:19.933647",
+      "source": "cron_ingest"
+    },
+    {
+      "error": "Cron job issue: */30 * * * * python3 /root/.hermes/scripts/kb_self_replicate.py >> /root/.hermes/logs/kb_replicate.l",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:50:19.933657",
+      "source": "cron_ingest"
+    },
+    {
+      "error": "Cron job issue: */15 * * * * python3 /root/.hermes/scripts/hostinger_health_check.py >> /root/.hermes/logs/hostinger",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:50:19.933659",
+      "source": "cron_ingest"
+    }
+  ],
+  "knowledge_base": [
+    {
+      "signature": "self_audit::KB_HEALTH_LOW",
+      "error": "Self-audit gap: KB_HEALTH",
+      "component": "self_audit",
+      "fix_type": "investigate",
+      "status": "KB_HEALTH_LOW",
+      "msg": "0.0% (0/48 verified)",
+      "fix_attempted": "kb_combined did not improve health: [2026-09-03T12:34:04.491686] OK: kb_self_heal.py\n[2026-09-03T12:34:04.567876] OK: kb_feedback_loop.p",
+      "verified": false,
+      "auto_fixed": false,
+      "success_count": 0,
+      "correlation_confidence": "medium",
+      "first_seen": "2026-09-03T12:34:03.488702",
+      "last_seen": "2026-09-03T12:34:03.488702",
+      "confidence": 0.0,
+      "certified": false
+    },
+    {
+      "signature": "self_audit::ERROR:SERVICES",
+      "error": "Self-audit gap: SERVICES",
+      "component": "self_audit",
+      "fix_type": "investigate",
+      "status": "ERROR:SERVICES",
+      "msg": "list index out of range",
+      "fix_attempted": "No autonomous fix available",
+      "verified": false,
+      "auto_fixed": false,
+      "success_count": 0,
+      "correlation_confidence": "medium",
+      "first_seen": "2026-09-03T12:34:03.488702",
+      "last_seen": "2026-09-03T12:34:03.488702",
+      "confidence": 0.0,
+      "certified": false
+    },
+    {
+      "signature": "connection_error",
+      "fix": "Cross-source error (medium): unknown",
+      "verified": "false",
+      "component": "unknown",
+      "tech_stack": "Hermes",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "occurrence_count": 1,
+      "auto_fixed": "true",
+      "success_count": 0,
+      "fail_count": 0,
+      "confidence": 0.0,
+      "certified": false
+    },
+    {
+      "error": "Cron job issue: 0 * * * * cd /root/.hermes/scripts && python3 github-error-fix.py >> /root/.hermes/logs/error-fix.lo",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:46:06.336769",
+      "source": "cron_ingest",
+      "confidence": 0.0,
+      "certified": false
+    },
+    {
+      "error": "Cron job issue: 0 */4 * * * cd /root/.hermes/scripts && python3 evolution-engine.py >> /root/.hermes/logs/evolution-",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:46:06.336794",
+      "source": "cron_ingest",
+      "confidence": 0.0,
+      "certified": false
+    },
+    {
+      "error": "Cron job issue: 0 4 * * * bash /root/rotate_survival_capsule.sh >> /root/survival-capsule-rotation.log 2>&1",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:46:06.336802",
+      "source": "cron_ingest",
+      "confidence": 0.0,
+      "certified": false
+    },
+    {
+      "error": "Cron job issue: */30 * * * * python3 /root/.hermes/scripts/kb_self_replicate.py >> /root/.hermes/logs/kb_replicate.l",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:46:06.336809",
+      "source": "cron_ingest",
+      "confidence": 0.0,
+      "certified": false
+    },
+    {
+      "error": "Cron job issue: */15 * * * * python3 /root/.hermes/scripts/hostinger_health_check.py >> /root/.hermes/logs/hostinger",
+      "status": "investigate",
+      "fixes": [],
+      "tags": [
+        "cron",
+        "scheduled"
+      ],
+      "created_at": "2026-09-03T12:46:06.336815",
+      "source": "cron_ingest",
+      "confidence": 0.0,
+      "certified": false
+    }
+  ],
+  "version": "1.0",
+  "updated": "2026-09-03T12:49:34.580389"
+}
