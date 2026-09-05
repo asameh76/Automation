@@ -1,0 +1,22 @@
+{
+  "errors": [
+    {
+      "signature": "self_audit::KB_HEALTH_LOW",
+      "error": "Self-audit gap: KB_HEALTH",
+      "component": "self_audit",
+      "fix_type": "investigate",
+      "status": "KB_HEALTH_LOW",
+      "msg": "20.0% (3/15 verified)",
+      "fix_attempted": "kb_combined did not improve health: [2026-09-05T18:00:14.670653] OK: kb_prune.py\n[2026-09-05T18:00:15.453030] OK: kb_predictor.py\n[2026-",
+      "verified": false,
+      "auto_fixed": false,
+      "success_count": 0,
+      "correlation_confidence": "medium",
+      "first_seen": "2026-09-05T18:00:09.550086",
+      "last_seen": "2026-09-05T18:00:09.550086"
+    }
+  ],
+  "knowledge_base": [],
+  "version": "1.0",
+  "updated": "2026-09-05T18:00:46.796022"
+}
